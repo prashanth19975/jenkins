@@ -1,5 +1,4 @@
 node {
-    def mvnHome
     stage('Preparation') { // for display purposes
         // Get some code from a GitHub repository
         git branch: 'main', credentialsId: 'gitjenkins', url: 'https://github.com/prashanth19975/prashanth19975.git'
