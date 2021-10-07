@@ -1,11 +1,5 @@
 pipeline {
     agent any
-
-    tools {
-        // Install the Maven version configured as "M3" and add it to the path.
-        maven "M3"
-    }
-
     stages {
         stage('git clone') {
             steps {
@@ -37,7 +31,7 @@ pipeline {
 			    sh 'mvn test'
 				}
 				}		
-		tage('maven package') {
+		stage('maven package') {
             steps {	 
 			    sh 'mvn package'
 				}
