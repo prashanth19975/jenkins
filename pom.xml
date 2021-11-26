@@ -179,19 +179,17 @@
       </build>
    <distributionManagement>
          <repository>
-           <id>releases</id>
+           <id>deployment</id>
            <name>Releases</name>
            <url>http://18.221.247.173:8081/repository/maven-releases/</url>
         </repository>
         
         <snapshotRepository>
-           <id>snapshots</id>
+           <id>deployment</id>
            <name>snapshots</name>
       <url>http://18.221.247.173:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
   </distributionManagement>
-    </profile>
-  </profiles>
 </project>
 
 
