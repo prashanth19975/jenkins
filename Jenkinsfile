@@ -31,11 +31,16 @@ pipeline {
 			    sh 'mvn test'
 				}
 				}		
-        stage('maven package') {
+                stage('maven package') {
             steps {	 
 			    sh 'mvn package'
 				}
-				}						
+				}
+	        stage('maven deploy') {
+            steps {	 
+			    sh 'mvn deploy'
+				}
+				}
 	}
 
 }	
