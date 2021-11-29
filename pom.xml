@@ -181,12 +181,12 @@
          <repository>
            <id>deployment</id>
            <name>Releases</name>
-           <url>http://3.144.159.19:8081/repository/maven-releases/</url>
+           <url>http://172.31.31.64:8081/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
            <id>deployment</id>
            <name>snapshots</name>
-           <url>http://3.144.159.19:8081/repository/maven-snapshots/</url>
+           <url>http://172.31.31.64:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
   </distributionManagement>
 </project>
