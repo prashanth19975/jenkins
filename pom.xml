@@ -177,6 +177,8 @@
           </plugin>
         </plugins>
       </build>
+      </profiles>
+      </profile>
    <distributionManagement>
          <repository>
            <id>deploymentRepo</id>
@@ -188,8 +190,7 @@
            <name>snapshots</name>
            <url>http:http://18.191.6.103:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
-  </distributionManagement>
-</profile>      
+  </distributionManagement>     
 </project>
 
 
