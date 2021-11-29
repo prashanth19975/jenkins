@@ -178,7 +178,6 @@
         </plugins>
       </build>
       </profiles>
-      </profile>
    <distributionManagement>
          <repository>
            <id>deploymentRepo</id>
