@@ -36,13 +36,13 @@ pipeline {
 			    sh 'mvn package'
 				}
 				}
-		stage('sonarqube analysis') {
+		stage('sonarscan') {
 	    steps{
-	            mvn sonar:sonar \
-                      -Dsonar.projectKey=jenkins1 \
-                      -Dsonar.host.url=http://3.110.197.109:9000/sonarqube \
-                      -Dsonar.login=bdb3555ac768f7d51e8432e73e4440cffe659c93
-		            sh 'sonarqube analysis'
+	            
+		            sh 'mvn sonar:sonar \
+  -Dsonar.projectKey=jenkins1 \
+  -Dsonar.host.url=http://3.110.197.109:9000/sonarqube \
+  -Dsonar.login=bdb3555ac768f7d51e8432e73e4440cffe659c93'
 			     }
 			     }
 		}
