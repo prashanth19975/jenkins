@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('git clone') {
             steps {
-			   git credentialsId: '7055e685-65e1-4ff3-a369-6085c5f4ca7c', url: 'https://github.com/prashanth19975/prashanth19975.git'
+			   git branch: 'main', url: 'https://github.com/prashanth19975/jenkins.git'
              }
              }
 		stage('maven version') {
