@@ -50,7 +50,14 @@ pipeline {
 			    sh 'mvn deploy'
 				}
 				}  
-            
-            }
+                stage('tomcat deploy') {
+	    steps {
+		      sshagent(['TOMCAT']) {
+                   // some block
+                            sh 'scp -o StrictHostkeyChecking=no webapp/target/**/*.war ec2-user@13.235.50.153:/root/apache-tomcat-10.0.27/webapps'
+                               }
+	                       }
+		               }
+	    }		    
 
 }	
