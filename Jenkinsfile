@@ -39,10 +39,10 @@ pipeline {
 		stage('sonarscan') {
 	    steps{
 	            
-		            sh 'mvn sonar:sonar \
-  -Dsonar.projectKey=jenkins1 \
-  -Dsonar.host.url=http://3.110.62.244:9000//sonarqube \
-  -Dsonar.login=bdb3555ac768f7d51e8432e73e4440cffe659c93'
+		            sh mvn sonar:sonar \
+  -Dsonar.projectKey=project1 \
+  -Dsonar.host.url=http://3.110.62.244:9000/sonarqube \
+  -Dsonar.login=11baad226d79ef647a58fffc535e8656c8340f57'
 			     }
 		}
 	        
