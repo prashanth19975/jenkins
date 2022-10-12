@@ -44,8 +44,12 @@ pipeline {
   -Dsonar.host.url=http://3.110.62.244:9000/sonarqube \
   -Dsonar.login=11baad226d79ef647a58fffc535e8656c8340f57'
 			     }
-		}
-	        
+		             }
+	       stage('maven deploy') {
+            steps {	 
+			    sh 'mvn deploy'
+				}
+				}  
 	}
 
 }	
